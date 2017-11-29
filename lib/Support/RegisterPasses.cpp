@@ -264,9 +264,7 @@ void initializePollyPasses(PassRegistry &Registry) {
   initializePollyCanonicalizePass(Registry);
   initializePolyhedralInfoPass(Registry);
   initializeScopDetectionWrapperPassPass(Registry);
-#if 0
   initializeScopInlinerPass(Registry);
-#endif
   initializeScopInfoRegionPassPass(Registry);
   initializeScopInfoWrapperPassPass(Registry);
   initializeRewriteByrefParamsPass(Registry);
