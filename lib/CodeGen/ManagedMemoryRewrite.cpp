@@ -417,6 +417,7 @@ public:
 } // namespace
 char ManagedMemoryRewritePass::ID = 42;
 
+#if 0
 Pass *polly::createManagedMemoryRewritePassPass(GPUArch Arch,
                                                 GPURuntime Runtime) {
   ManagedMemoryRewritePass *pass = new ManagedMemoryRewritePass();
@@ -440,3 +441,4 @@ INITIALIZE_PASS_END(
     ManagedMemoryRewritePass, "polly-acc-rewrite-managed-memory",
     "Polly - Rewrite all allocations in heap & data section to managed memory",
     false, false)
+#endif
